@@ -137,7 +137,7 @@ struct Mode7World extends Mode7 {
   
   import void RemoveObject(int object_id = -1);
   import void RemoveAllsObjects();
-  import int GetAngleObjectAndCamera(int object_id);
+  import int GetAngleObjectAndCamera(Mode7Object* m7obj);
   import void UpdateObjects();
   import void DrawObjects();
   import void DrawWorld();

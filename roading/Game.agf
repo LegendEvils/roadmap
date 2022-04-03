@@ -705,7 +705,7 @@
               <Transparency>40</Transparency>
               <Visible>False</Visible>
               <Width>320</Width>
-              <ZOrder>0</ZOrder>
+              <ZOrder>2048</ZOrder>
             </NormalGUI>
             <Controls>
               <GUILabel>
@@ -744,7 +744,7 @@
               <Transparency>25</Transparency>
               <Visible>True</Visible>
               <Width>64</Width>
-              <ZOrder>0</ZOrder>
+              <ZOrder>2049</ZOrder>
             </NormalGUI>
             <Controls />
           </GUIMain>
@@ -765,7 +765,7 @@
               <Transparency>0</Transparency>
               <Visible>True</Visible>
               <Width>320</Width>
-              <ZOrder>0</ZOrder>
+              <ZOrder>2050</ZOrder>
             </NormalGUI>
             <Controls />
           </GUIMain>

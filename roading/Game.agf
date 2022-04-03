@@ -733,17 +733,17 @@
               <BackgroundImage>0</BackgroundImage>
               <BorderColor>0</BorderColor>
               <Clickable>False</Clickable>
-              <Height>128</Height>
+              <Height>64</Height>
               <ID>2</ID>
-              <Left>192</Left>
+              <Left>256</Left>
               <Name>gMiniMap</Name>
               <OnClick />
               <PopupStyle>Normal</PopupStyle>
               <PopupYPos>0</PopupYPos>
-              <Top>0</Top>
+              <Top>116</Top>
               <Transparency>25</Transparency>
               <Visible>True</Visible>
-              <Width>128</Width>
+              <Width>64</Width>
               <ZOrder>0</ZOrder>
             </NormalGUI>
             <Controls />
@@ -2114,6 +2114,54 @@
           <ScriptAndHeader>
             <ScriptAndHeader_Header>
               <Script>
+                <FileName>defines.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1869225162</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>defines.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1869225162</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
+                <FileName>math_utils.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>734857255</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>math_utils.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>734857255</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
                 <FileName>jsonparser.ash</FileName>
                 <Name />
                 <Description />
@@ -2162,6 +2210,30 @@
           <ScriptAndHeader>
             <ScriptAndHeader_Header>
               <Script>
+                <FileName>terraintype.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1918752999</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>terraintype.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1918752999</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
                 <FileName>zone_manager.ash</FileName>
                 <Name />
                 <Description />
@@ -2186,6 +2258,30 @@
           <ScriptAndHeader>
             <ScriptAndHeader_Header>
               <Script>
+                <FileName>physics_manager.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>611772772</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>physics_manager.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>611772772</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
                 <FileName>input.ash</FileName>
                 <Name />
                 <Description />
@@ -2203,6 +2299,54 @@
                 <Author />
                 <Version />
                 <Key>1887101639</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
+                <FileName>m7.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>57673279</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>m7.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>57673279</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
+                <FileName>minimap.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>66180289</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>minimap.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>66180289</Key>
                 <IsHeader>False</IsHeader>
               </Script>
             </ScriptAndHeader_Script>

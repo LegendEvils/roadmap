@@ -1,5 +1,5 @@
 // new module header
-#define MAX_OBJECTS 1024
+#define MAX_OBJECTS 720
 
 enum eCameraTargetType {
   eCameraTarget_FollowBehind,
@@ -52,7 +52,7 @@ struct Mode7 {
   /// Sets the camera position, angle and focal length
   import void SetCamera(float x, float y, float z, float xa, float ya, float focal_length);
   /// Sets the screen area it will draw in
-  import void SetViewscreen(int x, int y, int width, int height);
+  import void SetViewscreen(int width, int height, int x = 0, int y = 0);
   /// Sets the ground sprite, this is the mode7 rendered sprite
   import void SetGroundSprite(int ground_graphic);
   /// Sets a sprite that will roll around in the horizon, you can also make it static

@@ -3,6 +3,8 @@
 #define MAX_OBJ_PER_ZONE 256
 #define MAX_OBJ_ALL_ZONES 16384
 
+#define ZM_MAX_WORLD_OBJ 2048
+
 // can't change
 #define MAX_ACTIVE_ZONES 9
 
@@ -25,7 +27,7 @@ struct ZoneManager {
   
   import Mode7Object* AddObject(int x, int z, float factor, int graphic);
   
-  Mode7Object* Objects [MAX_OBJECTS];
+  Mode7Object* Objects [ZM_MAX_WORLD_OBJ];
   writeprotected int ObjectCount;
   
   import protected void _AddObjectToZone(Mode7Object* m7obj, int obj_id);
@@ -35,8 +37,13 @@ struct ZoneManager {
   protected int _iZone;  
   protected int _iZoneObject;
   
-  import void ResetObjectActiveZone();
-  import Mode7Object* GetNextObjectActiveZone();
+  import void ResetObjectActiveZones();
+  import Mode7Object* GetNextObjectActiveZones();
+  
+  protected int _IteratingZone;
+  protected int _iObjectIteratingZone;
+  import void ResetObjectIteratingZone();
+  import Mode7Object* GetNextObjectIteratingZone();
   
   writeprotected bool ZoneChanged;
   

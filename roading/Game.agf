@@ -703,7 +703,7 @@
               <PopupYPos>0</PopupYPos>
               <Top>0</Top>
               <Transparency>40</Transparency>
-              <Visible>True</Visible>
+              <Visible>False</Visible>
               <Width>320</Width>
               <ZOrder>0</ZOrder>
             </NormalGUI>
@@ -733,7 +733,7 @@
               <BackgroundImage>0</BackgroundImage>
               <BorderColor>0</BorderColor>
               <Clickable>False</Clickable>
-              <Height>128</Height>
+              <Height>64</Height>
               <ID>2</ID>
               <Left>256</Left>
               <Name>gMiniMap</Name>
@@ -743,7 +743,7 @@
               <Top>116</Top>
               <Transparency>25</Transparency>
               <Visible>True</Visible>
-              <Width>128</Width>
+              <Width>64</Width>
               <ZOrder>0</ZOrder>
             </NormalGUI>
             <Controls />
@@ -763,7 +763,7 @@
               <PopupYPos>0</PopupYPos>
               <Top>112</Top>
               <Transparency>0</Transparency>
-              <Visible>False</Visible>
+              <Visible>True</Visible>
               <Width>320</Width>
               <ZOrder>0</ZOrder>
             </NormalGUI>

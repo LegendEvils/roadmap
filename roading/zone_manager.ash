@@ -55,16 +55,23 @@ struct ZoneManager {
   protected int _iObjectIteratingZone;
   
   
+  /// Call before starting a GetNextObjectVicinityZones sequence
+  import void ResetObjectVicinityZones();
+  /// Returns the next object from all vicinity zones, or null if it has iterated through all objects. Call ResetObjectVicinityZones if you want to iterate again.
+  import Mode7Object* GetNextObjectVicinityZones();
+  
+  protected int _iVicZone;  
+  protected int _iVicZoneObject;
+  
+  
   import protected void _AddObjectToZone(Mode7Object* m7obj, int obj_id);
   writeprotected int ZoneObjectCount[MAX_ZONES];
-  writeprotected int ZoneObject[MAX_OBJ_ALL_ZONES];  
-  
-  
-  
+  writeprotected int ZoneObject[MAX_OBJ_ALL_ZONES];   
   
   import protected void _AdjustActiveZones();
   protected int _ActiveZones[MAX_ACTIVE_ZONES];
   
   import protected void _AdjustVicinityZones();
   protected int _VicinityZones[MAX_VICINITY_ZONES];
+  protected int _VicinityZoneCount;
 };

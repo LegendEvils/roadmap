@@ -138,6 +138,7 @@ struct Mode7World extends Mode7 {
   import void UpdateObjects();
   import void DrawObjects();
   import void DrawWorld();
+  import DynamicSprite* DrawWorld2D();
   
   // objects
   Mode7Object* Objects [MAX_OBJECTS];

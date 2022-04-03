@@ -132,6 +132,9 @@ struct Mode7 {
 
 struct Mode7World extends Mode7 {
   import Mode7Object* AddObject(int x, int z, float factor, int graphic);
+  
+  import void AddExternalObject(Mode7Object* m7obj);
+  
   import void RemoveObject(int object_id = -1);
   import void RemoveAllsObjects();
   import int GetAngleObjectAndCamera(int object_id);

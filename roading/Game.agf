@@ -733,17 +733,17 @@
               <BackgroundImage>0</BackgroundImage>
               <BorderColor>2</BorderColor>
               <Clickable>False</Clickable>
-              <Height>80</Height>
+              <Height>128</Height>
               <ID>2</ID>
-              <Left>240</Left>
+              <Left>192</Left>
               <Name>gMiniMap</Name>
               <OnClick />
               <PopupStyle>Normal</PopupStyle>
               <PopupYPos>0</PopupYPos>
               <Top>0</Top>
-              <Transparency>0</Transparency>
+              <Transparency>25</Transparency>
               <Visible>True</Visible>
-              <Width>80</Width>
+              <Width>128</Width>
               <ZOrder>0</ZOrder>
             </NormalGUI>
             <Controls />
@@ -2155,6 +2155,30 @@
                 <Author>eri0o</Author>
                 <Version>0.1.0</Version>
                 <Key>561448884</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
+                <FileName>zone_manager.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1683078659</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>zone_manager.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1683078659</Key>
                 <IsHeader>False</IsHeader>
               </Script>
             </ScriptAndHeader_Script>

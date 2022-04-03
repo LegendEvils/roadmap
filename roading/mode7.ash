@@ -1,5 +1,5 @@
 // new module header
-#define MAX_OBJECTS 720
+#define MAX_OBJECTS 512
 
 enum eCameraTargetType {
   eCameraTarget_FollowBehind,
@@ -71,19 +71,20 @@ struct Mode7 {
   /// Clears the screen sprite
   import void ResetGround();
   
-  import Point* ScreenToGroundPos(int x, int y);
   
   import void DebugKeyPress(eKeyCode k);
   
+  /// The camera angle that is normal to the ground plane (e.g.: up and down)
   import attribute float CameraAngleX;
   import float get_CameraAngleX(); //$AUTOCOMPLETEIGNORE$
   import void set_CameraAngleX(float value); //$AUTOCOMPLETEIGNORE$
   
+  /// The camera angle that is on the ground plane (e.g.: left and right)
   import attribute float CameraAngleY;
   import float get_CameraAngleY(); //$AUTOCOMPLETEIGNORE$
   import void set_CameraAngleY(float value); //$AUTOCOMPLETEIGNORE$
   
-  // screen 
+  /// The Dynamic Sprite that represents the screen where the Mode7 ground is draw to 
   writeprotected DynamicSprite* Screen;  
   
   
@@ -131,20 +132,29 @@ struct Mode7 {
 };
 
 struct Mode7World extends Mode7 {
+  /// Adds an object, and sets it's x and z position. The y (vertical) position is always zero. You also must pass a scale factor and it's graphics.
   import Mode7Object* AddObject(int x, int z, float factor, int graphic);
-  
+  /// Adds an external object that is not managed by the Mode7World. It will still be updated and draw, but removing it from the world will probably not garbage collect it.
   import void AddExternalObject(Mode7Object* m7obj);
   
+  /// Removes the object from the world, if there is no external pointers to it, it will be garbage collected. If you don't specify it will remove the top object.
   import void RemoveObject(int object_id = -1);
+  /// Removes all objects from the world. Objects without external pointers get garbage collected.
   import void RemoveAllsObjects();
+  /// Returns the angle in degrees between the camera and whatever angle is set to a specific object. Useful when you want to change the graphic of an object based on their relative angle.
   import int GetAngleObjectAndCamera(Mode7Object* m7obj);
+  /// Update the screen transform of all objects world positions to their screen positions. You must call it before drawing any objects!
   import void UpdateObjects();
+  /// Draws only the objects in the screen sprite. You can use when you need to draw additional things between the ground and the objects. Or when you don't need the ground at all.
   import void DrawObjects();
+  /// Draws the ground sprite and the objects over it, in the screen sprite.
   import void DrawWorld();
+  /// Gets a dynamic sprite with the world draw in top down view, useful for debugging.
   import DynamicSprite* DrawWorld2D();
   
-  // objects
+  /// Let's you access a specific object in the mode7 world by it's index. Make sure to access a valid position.
   Mode7Object* Objects [MAX_OBJECTS];
+  /// Gets how many objects are currently in the mode7 world.
   writeprotected int ObjectCount;  
   writeprotected int ObjectScreenVisibleCount;
   writeprotected int ObjectScreenVisibleOrder[MAX_OBJECTS];

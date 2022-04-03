@@ -5,6 +5,8 @@ import float MaxF(float a, float b);
 import float MinF(float a, float b);
 import float ClampF(float v, float min, float max);
 
+
+import int AbsI(int a);
 import int MaxI(int a, int b);
 import int MinI(int a, int b);
 

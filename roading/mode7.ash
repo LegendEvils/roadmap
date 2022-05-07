@@ -1,5 +1,5 @@
 // new module header
-#define MAX_OBJECTS 2048
+#define MAX_OBJECTS 4096
 
 enum eCameraTargetType {
   eCameraTarget_FollowBehind,

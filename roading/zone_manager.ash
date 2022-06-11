@@ -1,9 +1,10 @@
 // new module header
 #define MAX_ZONES 64
-#define MAX_OBJ_PER_ZONE 256
-#define MAX_OBJ_ALL_ZONES 16384
+#define MAX_OBJ_PER_ZONE 1024
+// MAX_ZONES * MAX_OBJ_PER_ZONE
+#define MAX_OBJ_ALL_ZONES 65536
 
-#define ZM_MAX_WORLD_OBJ 2048
+#define ZM_MAX_WORLD_OBJ 4096
 
 // can't change
 #define MAX_ACTIVE_ZONES 9
